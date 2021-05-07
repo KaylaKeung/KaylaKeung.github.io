@@ -47,22 +47,22 @@ section {
   height: 60vh;
 }
 section:nth-child(1) .image__top, section:nth-child(1) .image__bottom, section:nth-child(1) .image__inner {
-  background-image: url("/img/assignment1copy-02.png");
+  background-image: url(img/assignment1copy-02.png);
 }
 section:nth-child(2) .image__top, section:nth-child(2) .image__bottom, section:nth-child(2) .image__inner {
-  background-image: url("/img/Screen\ Shot\ 2021-02-12\ at\ 17.24.04.png Shot\ 2021-02-12\ at\ 17.24.04.png");
+  background-image: url(img/Screen\ Shot\ 2021-02-12\ at\ 17.24.04.png);
 }
 section:nth-child(3) .image__top, section:nth-child(3) .image__bottom, section:nth-child(3) .image__inner {
-  background-image: url("/img/responsive.png");
+  background-image: url(img/responsive.png);
 }
 section:nth-child(4) .image__top, section:nth-child(4) .image__bottom, section:nth-child(4) .image__inner {
-  background-image: url("/img/calendar.png");
+  background-image: url(img/calendar.png);
 }
 section:nth-child(5) .image__top, section:nth-child(5) .image__bottom, section:nth-child(5) .image__inner {
-  background-image: url("/img/zine.png");
+  background-image: url(img/zine.png);
 }
 section:nth-child(6) .image__top, section:nth-child(6) .image__bottom, section:nth-child(6) .image__inner {
-  background-image: url("/img/collection.png");
+  background-image: url(img/collection.png);
 }
 
 .image {

@@ -47,16 +47,16 @@ section {
   height: 60vh;
 }
 section:nth-child(1) .image__top, section:nth-child(1) .image__bottom, section:nth-child(1) .image__inner {
-  background-image: url("/img/project1.png");
+  background-image: url(img/project1.png);
 }
 section:nth-child(2) .image__top, section:nth-child(2) .image__bottom, section:nth-child(2) .image__inner {
-  background-image: url("/img/redesign-16.png");
+  background-image: url(img/redesign-16.png);
 }
 section:nth-child(3) .image__top, section:nth-child(3) .image__bottom, section:nth-child(3) .image__inner {
-  background-image: url("/img/project3.png");
+  background-image: url(img/project3.png);
 }
 section:nth-child(4) .image__top, section:nth-child(4) .image__bottom, section:nth-child(4) .image__inner {
-  background-image: url("/img/project4.png");
+  background-image: url(img/project4.png);
 }
 
 .image {
