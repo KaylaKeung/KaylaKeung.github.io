@@ -1,0 +1,218 @@
+/* RGB */
+body {
+  color: white;
+  font-family: "Space Mono", monospace;
+  margin: 0;
+  background: black;
+}
+
+section,
+header,
+footer {
+  height: 100vh;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  z-index:0;
+}
+section:nth-child(2),
+header:nth-child(2),
+footer:nth-child(2) {
+  overflow: hidden;
+  z-index: 0;
+}
+section:nth-child(3),
+
+header:nth-child(3),
+footer:nth-child(3) {
+}
+section:nth-child(4),
+header:nth-child(4),
+footer:nth-child(4) {
+}
+
+section.half,
+header.half,
+footer.half {
+  height: 100vh;
+  z-index: 0;
+}
+section.double,
+header.double,
+footer.double {
+  height: 200vh;
+}
+section:after,
+header:after,
+footer:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+h1 {
+  margin: auto;
+  font-size: 5vw;
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
+  font-weight: 700;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 2px white;
+  cursor: pointer;
+  z-index: 8;
+  mix-blend-mode:normal;
+  
+
+}
+h1:hover{
+  
+  -webkit-text-stroke: 2px tomato;
+}
+a{
+  text-decoration: none;
+  color:inherit;
+}
+a:visited {
+  text-decoration: none;
+  color: inherit;}
+
+nav {
+  position: fixed;
+  z-index: 10;
+  right: 2vw;
+  text-align: center;
+  height: 100vh;
+  text-transform: uppercase;
+  font-size: 1.5vw;
+  letter-spacing: -0.05em;
+  font-weight: 300;
+  font-style: italic;
+  cursor: pointer;
+}
+nav ul {
+  list-style: none;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+nav ul li {
+  opacity: 0.5;
+  transition: opacity 200ms linear;
+  margin-bottom: 0.5vw;
+}
+nav ul li.middle {
+  opacity: 1;
+}
+
+.normal .r,
+.normal .g,
+.normal .b {
+  width: calc(100% + 10px);
+  height: calc(100% + 60px);
+  position: absolute;
+  top: -20px;
+  left: -20px;
+  background-size: contain;
+  mix-blend-mode: screen;
+  background-blend-mode: darken;
+  background-image: url(img/plastic.png);
+}
+
+.normal .r {
+  background-color: red;
+}
+.normal .g {
+  background-color: lime;
+}
+.normal .b {
+  background-color: blue;
+}
+
+/* half */
+.half .r,
+.half .g,
+.half .b {
+  width: calc(100% + 20px);
+  height: calc(100% + 20px);
+  position: absolute;
+  top: -20px;
+  left: -20px;
+  background-size: cover;
+  mix-blend-mode: screen;
+  background-blend-mode: darken;
+  background-image: url(img/line.png);
+  background-size: cover;
+}
+
+.half .r {
+  background-color: red;
+}
+.half .g {
+  background-color: lime;
+}
+.half .b {
+  background-color: blue;
+}
+
+/* header */
+.header .r,
+.header .g,
+.header .b {
+  width: calc(100% + 20px);
+  height: calc(100% + 20px);
+  position: absolute;
+  top: -20px;
+  left: -20px;
+  mix-blend-mode: screen;
+  background-blend-mode: darken;
+  background-image: url(img/6ef62cf7ea24c06a5b0eb5153b379bec.jpeg);
+  background-size: contain;
+  z-index: 0;
+}
+
+.header .r {
+  background-color: red;
+}
+.header .g {
+  background-color: lime;
+}
+.header .b {
+  background-color: blue;
+}
+.stripe {
+  position: fixed;
+  top: 37.5vh;
+  left: 0vw;
+  width: 100vw;
+  height: 25vh;
+  background: tomato;
+  z-index: 10;
+  mix-blend-mode:soft-light;
+  pointer-events: none;
+}
+.stripe .next,
+.stripe .prev {
+  pointer-events: auto;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  font-family: "Space Mono", monospace;
+  background: transparent;
+  color: white;
+  outline: none;
+  position: absolute;
+  opacity: 0.3;
+  top: 50%;
+  left: calc(50vw - 47vmin);
+  cursor: pointer;
+  height: 4vmin;
+  width: 4vmin;
+  font-size: 2vmin;
+  border: none;
+  box-sizing: border-box;
+  z-index: 11;
+}
+
